@@ -1,18 +1,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>Customer Support Application Index File</title>
+    <title>URL Shortener User Console</title>
   </head>
   <body>
   		
   		
-  	URL Shortener Service
-  
-      <a href="index.jsp">Home</a>
+  	<h1>URL Shortener Service</h1>
+  	<p>Date:<%= new java.util.Date()  %></p>  
+  	
+	<form method="post" action="" >
+    	 <input type="submit" name="logout" value="Log Out">
+    </form>
       
       
-      <!--  TODO*************
-			this is the user page where a user who is signed in can view all the shortened URLs associated with their account and 
-			other relevant data -->      
+	 
+	 <form method="post" action="">
+     Long URL:  <input type="text" name="longURL">
+    		   <input type="submit" value="Get Short URL">
+   </form>		
+			
+	
+	        
+			
   </body>
 </html>

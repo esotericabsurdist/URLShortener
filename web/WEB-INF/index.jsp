@@ -1,20 +1,36 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>Fantastic URL Shortener Service</title>
+    <title>Fantastic URL Shortener</title>
+    
+   
+    
   </head>
   <body>
   
-  	<!-- Should any of this show up upon app start up? -->
-  	<h1>URL Shortener Service</h1>
+    <h1>URL Shortener Service</h1>
+    
+   <form method="post" action="">
+    User Name: <input type="text" name="userName">
+    Password:  <input type="password" name="password">
+    		   <input type="submit" value="Login">
+   </form>
+  
+
+
   	<p>Date:<%= new java.util.Date()  %></p>  
-    <a href="signup.jsp">Sign Up</a> 
-    <a href="userConsole.jsp">My Account</a>
+    <a href="signup">Sign Up</a> 
+     
+     
+    <form method="post">
+    Check your URL: <input type="text" name="shortURL">
+    		   <input type="submit" value="View Long URL">
+   </form>  
+   
+   
+  
+   
       
-      
-      
-      <!--  TODO*************
-      		this is the home page where users can check shortened URLS, or link to sign up or sign in? -->
       
   </body>
 </html>
